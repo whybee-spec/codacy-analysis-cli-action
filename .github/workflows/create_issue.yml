@@ -9,6 +9,7 @@ jobs:
     env:
       JIRA_CREATE_ISSUE_AUTO: ${{ secrets.JIRA_CREATE_ISSUE_AUTO }}
     runs-on: ubuntu-latest
+    environment: stagingj
     steps:
 
       - name: Start workflow if JIRA_CREATE_ISSUE_AUTO is enabled
